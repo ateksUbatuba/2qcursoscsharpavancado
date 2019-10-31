@@ -1,6 +1,6 @@
 ﻿namespace ProjetoCursos
 {
-    partial class Form1
+    partial class frmSplash
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -40,14 +40,14 @@
             this.panel1.Size = new System.Drawing.Size(484, 261);
             this.panel1.TabIndex = 0;
             // 
-            // Form1
+            // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "frmSplash";
             this.Text = "splash";
             this.ResumeLayout(false);
 
