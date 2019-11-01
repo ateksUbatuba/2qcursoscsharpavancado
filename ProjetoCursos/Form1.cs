@@ -20,9 +20,9 @@ namespace ProjetoCursos
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (pgbbarradeprogresso.Value <= 62)
+            if (pgbbarradeprogresso.Value < 100)
             {
-                pgbbarradeprogresso.Value += pgbbarradeprogresso.Value + 2;
+                pgbbarradeprogresso.Value += 2;
             }
             else
             {
