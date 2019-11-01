@@ -12,6 +12,7 @@ namespace ProjetoCursos
 {
     public partial class frmSplash : Form
     {
+
         public frmSplash()
         {
             InitializeComponent();
@@ -19,13 +20,17 @@ namespace ProjetoCursos
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value < 100)
+            if (pgbbarradeprogresso.Value <= 62)
             {
-                progressBar1.Value += progressBar1.Value + 2;
+                pgbbarradeprogresso.Value += pgbbarradeprogresso.Value + 2;
             }
             else
             {
-                Application.Exit();
+               //Application.Exit();
+               timer1.Enabled = false;
+               frmLogin form = new frmLogin();
+               form.Show();
+               this.Visible = false;
             }
         }
     }

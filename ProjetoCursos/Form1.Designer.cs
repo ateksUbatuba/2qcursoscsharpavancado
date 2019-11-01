@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pgbbarradeprogresso = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -41,13 +41,20 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.pgbbarradeprogresso);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(484, 261);
             this.panel1.TabIndex = 0;
+            // 
+            // pgbbarradeprogresso
+            // 
+            this.pgbbarradeprogresso.Location = new System.Drawing.Point(3, 243);
+            this.pgbbarradeprogresso.Name = "pgbbarradeprogresso";
+            this.pgbbarradeprogresso.Size = new System.Drawing.Size(239, 12);
+            this.pgbbarradeprogresso.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -58,13 +65,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(482, 259);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(3, 242);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(299, 13);
-            this.progressBar1.TabIndex = 1;
             // 
             // timer1
             // 
@@ -90,7 +90,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar pgbbarradeprogresso;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
     }

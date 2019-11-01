@@ -32,12 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.mkdSenha = new System.Windows.Forms.MaskedTextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,12 +45,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.Controls.Add(this.btnEntrar);
+            this.panel1.Controls.Add(this.txtusuario);
+            this.panel1.Controls.Add(this.mkdSenha);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -78,28 +78,29 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuário";
             // 
-            // maskedTextBox1
+            // mkdSenha
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(242, 160);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(156, 20);
-            this.maskedTextBox1.TabIndex = 2;
+            this.mkdSenha.Location = new System.Drawing.Point(242, 161);
+            this.mkdSenha.Name = "mkdSenha";
+            this.mkdSenha.PasswordChar = '*';
+            this.mkdSenha.Size = new System.Drawing.Size(156, 20);
+            this.mkdSenha.TabIndex = 2;
             // 
-            // textBox1
+            // txtusuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(242, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtusuario.Location = new System.Drawing.Point(242, 99);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(156, 20);
+            this.txtusuario.TabIndex = 3;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.Location = new System.Drawing.Point(242, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEntrar.Location = new System.Drawing.Point(242, 195);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(75, 23);
+            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -120,14 +121,15 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Controle de Acesso";
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.Location = new System.Drawing.Point(323, 195);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSair.Location = new System.Drawing.Point(323, 195);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 7;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmLogin
             // 
@@ -150,12 +152,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.MaskedTextBox mkdSenha;
         private System.Windows.Forms.Label label1;
     }
 }
