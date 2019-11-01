@@ -37,7 +37,13 @@ namespace ProjetoCursos
 
         private void wordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("word");
+            System.Diagnostics.Process.Start("winword");
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroCursos form = new frmCadastroCursos();
+            form.Show();
         }
     }
 }
