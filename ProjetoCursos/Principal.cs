@@ -16,5 +16,11 @@ namespace ProjetoCursos
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabel2.Text = DateTime.Now.ToShortDateString();
+            toolStripStatusLabel3.Text = DateTime.Now.ToShortTimeString();
+        }
     }
 }

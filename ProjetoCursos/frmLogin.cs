@@ -21,5 +21,13 @@ namespace ProjetoCursos
         {
             Application.Exit();
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            if (txtusuario.Text == "adm" && mkdSenha.Text == "123")
+            {
+
+            }
+        }
     }
 }
