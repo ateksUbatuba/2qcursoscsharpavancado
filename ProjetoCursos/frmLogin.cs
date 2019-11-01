@@ -26,8 +26,15 @@ namespace ProjetoCursos
         {
             if (txtusuario.Text == "adm" && mkdSenha.Text == "123")
             {
-
+                Principal form = new Principal();
+                form.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorretos.","Ocorreu um erro ao autenticar",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+
     }
 }
