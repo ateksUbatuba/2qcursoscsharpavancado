@@ -22,5 +22,10 @@ namespace ProjetoCursos
             toolStripStatusLabel2.Text = DateTime.Now.ToShortDateString();
             toolStripStatusLabel3.Text = DateTime.Now.ToShortTimeString();
         }
+
+        private void Principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
