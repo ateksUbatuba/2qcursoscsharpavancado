@@ -58,6 +58,18 @@
     <Compile Include="frmCadastroCursos.Designer.cs">
       <DependentUpon>frmCadastroCursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroLocatarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroLocatarios.Designer.cs">
+      <DependentUpon>frmCadastroLocatarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFuncionarios.Designer.cs">
+      <DependentUpon>frmCadastroFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadsatroProfessores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroCursos.resx">
       <DependentUpon>frmCadastroCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroLocatarios.resx">
+      <DependentUpon>frmCadastroLocatarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFuncionarios.resx">
+      <DependentUpon>frmCadastroFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadsatroProfessores.resx">
       <DependentUpon>frmCadsatroProfessores.cs</DependentUpon>

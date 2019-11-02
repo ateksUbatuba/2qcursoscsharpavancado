@@ -40,10 +40,29 @@ namespace ProjetoCursos
             System.Diagnostics.Process.Start("winword");
         }
 
+
+        private void locatárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroLocatarios frm1 = new frmCadastroLocatarios();
+            frm1.Show();
+        }
+
+        private void funcionáriioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroFuncionarios frm2 = new frmCadastroFuncionarios();
+            frm2.Show();
+        }
+
         private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroCursos form = new frmCadastroCursos();
-            form.Show();
+            frmCadastroCursos frm3 = new frmCadastroCursos();
+            frm3.Show();
+        }
+
+        private void professoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroProfessores frm4 = new frmCadastroProfessores();
+            frm4.Show();
         }
     }
 }

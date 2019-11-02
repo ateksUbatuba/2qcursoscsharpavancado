@@ -1,6 +1,6 @@
 ﻿namespace ProjetoCursos
 {
-    partial class frmCadastroProfessores
+    partial class frmCadastroFuncionarios
     {
         /// <summary>
         /// Required designer variable.
@@ -38,19 +38,19 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 270);
+            this.button2.Location = new System.Drawing.Point(315, 268);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 9;
             this.button2.Text = "cadastrar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 270);
+            this.button1.Location = new System.Drawing.Point(225, 268);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 8;
             this.button1.Text = "cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -58,11 +58,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 25);
+            this.tabControl1.Location = new System.Drawing.Point(12, 18);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(382, 236);
-            this.tabControl1.TabIndex = 4;
+            this.tabControl1.TabIndex = 7;
             // 
             // tabPage1
             // 
@@ -79,12 +79,12 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(368, 210);
+            this.tabPage2.Size = new System.Drawing.Size(374, 210);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // frmCadastroProfessores
+            // frmCadastroFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,9 +94,9 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "frmCadastroProfessores";
+            this.Name = "frmCadastroFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Professores";
+            this.Text = "Cadastro de Funcionários";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
