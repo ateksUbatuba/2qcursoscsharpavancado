@@ -32,13 +32,20 @@ namespace ProjetoCursos
             this.Validate();
             this.professorBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
+            MessageBox.Show("Registro Salvo com Sucesso", "Pergunta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja excluir registro","Pergunta",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Deseja excluir registro","Pergunta",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-
+                this.Validate();
+                this.professorBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
+            }
+            else
+            {
+                this.professorTableAdapter.Fill(this.bdprojetocursosDataSet.Professor);
             }
         }
      
