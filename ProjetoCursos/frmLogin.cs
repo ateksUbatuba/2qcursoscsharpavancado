@@ -24,7 +24,10 @@ namespace ProjetoCursos
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if (txtusuario.Text == "adm" && mkdSenha.Text == "123")
+            
+            int result = funionarioTableAdapter.FillByLogin(bdprojetocursosDataSet.Funionario, txtusuario.Text, mkdSenha.Text);//retorna 1 caso ache um registro e 0 caso nao ache
+            
+            if (result == 1)
             {
                 Principal form = new Principal();
                 form.Show();
@@ -37,5 +40,19 @@ namespace ProjetoCursos
             }
         }
 
+        private void funionarioBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.funionarioBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'bdprojetocursosDataSet.Funionario'. Você pode movê-la ou removê-la conforme necessário.
+            this.funionarioTableAdapter.Fill(this.bdprojetocursosDataSet.Funionario);
+
+        }
     }
 }

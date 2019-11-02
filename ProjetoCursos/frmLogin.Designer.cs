@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
@@ -38,8 +39,14 @@
             this.mkdSenha = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bdprojetocursosDataSet = new ProjetoCursos.bdprojetocursosDataSet();
+            this.funionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.funionarioTableAdapter = new ProjetoCursos.bdprojetocursosDataSetTableAdapters.FunionarioTableAdapter();
+            this.tableAdapterManager = new ProjetoCursos.bdprojetocursosDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdprojetocursosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.funionarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,6 +139,32 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // bdprojetocursosDataSet
+            // 
+            this.bdprojetocursosDataSet.DataSetName = "bdprojetocursosDataSet";
+            this.bdprojetocursosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // funionarioBindingSource
+            // 
+            this.funionarioBindingSource.DataMember = "Funionario";
+            this.funionarioBindingSource.DataSource = this.bdprojetocursosDataSet;
+            // 
+            // funionarioTableAdapter
+            // 
+            this.funionarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CursoTableAdapter = null;
+            this.tableAdapterManager.FunionarioTableAdapter = this.funionarioTableAdapter;
+            this.tableAdapterManager.itemlocacaoTableAdapter = null;
+            this.tableAdapterManager.LocacaoTableAdapter = null;
+            this.tableAdapterManager.LocatarioTableAdapter = null;
+            this.tableAdapterManager.PerfilTableAdapter = null;
+            this.tableAdapterManager.ProfessorTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ProjetoCursos.bdprojetocursosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,9 +176,12 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdprojetocursosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.funionarioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,5 +197,9 @@
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.MaskedTextBox mkdSenha;
         private System.Windows.Forms.Label label1;
+        private bdprojetocursosDataSet bdprojetocursosDataSet;
+        private System.Windows.Forms.BindingSource funionarioBindingSource;
+        private bdprojetocursosDataSetTableAdapters.FunionarioTableAdapter funionarioTableAdapter;
+        private bdprojetocursosDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
