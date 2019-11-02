@@ -283,6 +283,7 @@
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(68, 68);
             this.toolStripButton5.Text = "Cadastro de Funcionários";
+            this.toolStripButton5.Click += new System.EventHandler(this.funcionáriioToolStripMenuItem_Click);
             // 
             // toolStripButton6
             // 
@@ -292,6 +293,7 @@
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(68, 68);
             this.toolStripButton6.Text = "Cadastro de Locatário";
+            this.toolStripButton6.Click += new System.EventHandler(this.locatárioToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 

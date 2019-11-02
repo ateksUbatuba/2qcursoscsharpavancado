@@ -96,7 +96,7 @@
             this.MaximizeBox = false;
             this.Name = "frmCadastroLocatarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCadastroLocatarios";
+            this.Text = "Cadastro de Locatários";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
