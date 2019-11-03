@@ -19,42 +19,15 @@ namespace ProjetoCursos
 
 
         ////////////////////Icones de navegação////////////////////////////////
-        private void professorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.professorBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
-
-        }
-
-        private void professorBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.professorBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
-            MessageBox.Show("Registro Salvo com Sucesso", "Pergunta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Deseja excluir registro","Pergunta",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                this.Validate();
-                this.professorBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
-            }
-            else
-            {
-                this.professorTableAdapter.Fill(this.bdprojetocursosDataSet.Professor);
-            }
-        }
+       
+        
      
         //////////////////////////////////////////////////////////////////////////////
         
         private void frmCadastroProfessores_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'bdprojetocursosDataSet.Professor'. Você pode movê-la ou removê-la conforme necessário.
-            this.professorTableAdapter.Fill(this.bdprojetocursosDataSet.Professor);
+            
 
         }
 
