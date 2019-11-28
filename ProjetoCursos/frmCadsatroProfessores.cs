@@ -17,17 +17,11 @@ namespace ProjetoCursos
             InitializeComponent();
         }
 
-
-        ////////////////////Icones de navegação////////////////////////////////
-       
-        
-     
-        //////////////////////////////////////////////////////////////////////////////
-        
         private void frmCadastroProfessores_Load(object sender, EventArgs e)
         {
+            this.professorTableAdapter.Fill(this.bdprojetocursosDataSet.Professor);
             // TODO: esta linha de código carrega dados na tabela 'bdprojetocursosDataSet.Professor'. Você pode movê-la ou removê-la conforme necessário.
-            
+
 
         }
 
@@ -42,5 +36,24 @@ namespace ProjetoCursos
             this.Dispose();
         }
 
+
+
+        ////////////////////Icones de navegação////////////////////////////////
+        private void professorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.professorBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
+
+        }
+
+        private void professorBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.professorBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bdprojetocursosDataSet);
+
+        }
+        //////////////////////////////////////////////////////////////////////////////
     }
 }
